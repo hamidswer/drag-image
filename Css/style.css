@@ -1,0 +1,80 @@
+/* ===================================================================== */
+/* ===============================Font/Text============================= */
+
+/* ===================================================================== */
+/* ===============================Background============================ */
+
+.first-background {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+/* ===================================================================== */
+/* ===============================Grid================================== */
+
+/* ===================================================================== */
+/* =============================content================================= */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  margin: 0rem;
+  overflow: hidden;
+
+}
+
+/* ===================================================================== */
+/* =============================row-1=================================== */
+.row-1 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+}
+
+.block {
+  display: inline;
+  max-width: max-content;
+}
+
+.empty {
+  display: inline-block;
+  background: #ffffff;
+  height: auto;
+  width: 20vw;
+  height: 20rem;
+  margin: 2vw;
+}
+
+.choice {
+  background: #000;
+}
+
+.empty .fill {
+  display: block;
+  cursor: pointer;
+  width: 20vw;
+  height: 20rem;
+  background-image: url('../Img/life.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 5;
+}
+
+.hide {
+  position: absolute;
+  display: inline;
+  width: 20vw;
+  height: 20rem;
+  opacity: 0;
+  z-index: 7;
+}
+
+.empty .hold {
+  border: 0.15vw dotted #000;
+  margin: 0rem;
+}
